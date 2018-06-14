@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ModifyTeacherManageServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.ModifyTeacherManageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ModifyTeacherManageServlet</servlet-name>
+        <url-pattern>/ModifyTeacherManageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteTeacherManageServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.DeleteTeacherManageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteTeacherManageServlet</servlet-name>
+        <url-pattern>/DeleteTeacherManageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TeacherManageAddServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.TeacherManageAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TeacherManageAddServlet</servlet-name>
+        <url-pattern>/TeacherManageAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ModifyStudentGradeServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.ModifyStudentGradeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ModifyStudentGradeServlet</servlet-name>
+        <url-pattern>/ModifyStudentGradeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteStudentGradeServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.DeleteStudentGradeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteStudentGradeServlet</servlet-name>
+        <url-pattern>/DeleteStudentGradeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>StudentGradeInfoAddServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.StudentGradeInfoAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentGradeInfoAddServlet</servlet-name>
+        <url-pattern>/StudentGradeInfoAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ModifyTeacherServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.ModifyTeacherServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ModifyTeacherServlet</servlet-name>
+        <url-pattern>/ModifyTeacherServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteTeacherServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.DeleteTeacherServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteTeacherServlet</servlet-name>
+        <url-pattern>/DeleteTeacherServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TeacherInfoAddServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.TeacherInfoAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TeacherInfoAddServlet</servlet-name>
+        <url-pattern>/TeacherInfoAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>StudentInfoServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.StudentInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentInfoServlet</servlet-name>
+        <url-pattern>/StudentInfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>StudentInfoAddServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.StudentInfoAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentInfoAddServlet</servlet-name>
+        <url-pattern>/StudentInfoAddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentGradeServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.StudentGradeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentGradeServlet</servlet-name>
+        <url-pattern>/StudentGradeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherInfoServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.TeacherInfoServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>TeacherInfoServlet</servlet-name>
+        <url-pattern>/TeacherInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherManageServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.TeacherManageServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>TeacherManageServlet</servlet-name>
+        <url-pattern>/TeacherManageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.LoginServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.DeleteStudentServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/DeleteStudentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ModifyStudentServlet</servlet-name>
+        <servlet-class>com.loubth.BLL.ModifyStudentServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>ModifyStudentServlet</servlet-name>
+        <url-pattern>/ModifyStudentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>/UI/mainPageRel.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--<error-page>-->
+        <!--<exception-type>java.lang.Exception</exception-type>-->
+        <!--<location>/UI/error.jsp</location>-->
+    <!--</error-page>-->
+
+</web-app>
