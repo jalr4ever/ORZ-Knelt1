@@ -19,6 +19,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;
@@ -32,6 +33,9 @@
 <!--添加教师信息-->
 <form action="/TeacherInfoAddServlet" method="post">
     <div class="container">
+        <div  align="center" class="">
+            <h2>添加新的教师用户</h2>
+        </div>
         <table class="table table-bordered">
             <tr>
                 <td>照片（待完成）</td>
@@ -71,7 +75,7 @@
             </tr>
             <tr>
                 <td>添加选项</td>
-                <td><input type="submit" class="btn btn-warning btn-md" name="submit" value="确认添加"></td>
+                <td><input type="submit" class="btn btn-info btn-md" name="submit" value="确认添加"></td>
             </tr>
         </table>
     </div>

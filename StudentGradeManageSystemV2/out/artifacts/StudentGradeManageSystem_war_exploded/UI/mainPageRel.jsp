@@ -29,6 +29,10 @@
             width: 800px;
             height: 640px;
         }
+        body{
+            background-size: 100% 100%;
+        }
+
     </style>
     <script>
        <%--验证用户名--%>
@@ -77,7 +81,7 @@
     </script>
 
 </head>
-<body>
+<body >
 
 <form action="/LoginServlet" method="post" id="mainForm">
     <div class="demo-1">

@@ -18,11 +18,15 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+        }
+        body input{
+            color:GrayText;
         }
     </style>
 
@@ -31,6 +35,9 @@
 <!--添加学生成绩信息-->
 <form action="/StudentGradeInfoAddServlet" method="post">
     <div class="container" align="center">
+        <div  align="center" class="">
+            <h2>添加新的学生成绩</h2>
+        </div>
         <table class="table table-info table-bordered">
             <tbody>
             <tr>
@@ -95,7 +102,7 @@
             </tr>
             <tr>
                 <td>提交选项</td>
-                <td><input type="submit"  class="btn btn-warning btn-md" name="submit" value="确认添加"></td>
+                <td><input type="submit"  class="btn btn-info btn-md" name="submit" value="确认添加"></td>
             </tr>
             </tbody>
         </table>

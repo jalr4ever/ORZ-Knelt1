@@ -19,6 +19,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;
@@ -37,6 +38,9 @@
 <!--修改老师管理信息-->
 <form action="/ModifyTeacherManageServlet" method="post">
     <div class="container" align="center" style="margin-top: 10%">
+        <div  align="center" class="">
+            <h2>修改教师 ${teacherManage.id} 的管理班级信息</h2>
+        </div>
         <table class="table table-bordered table-info">
             <tbody>
             <tr>
@@ -57,7 +61,7 @@
             </tr>
             <tr>
                 <td>提交选项</td>
-                <td><input type="submit" class="btn btn-info" name="submit" value="确认修改"></td>
+                <td><input type="submit" class="btn btn-warning" name="submit" value="确认修改"></td>
             </tr>
             </tbody>
         </table>

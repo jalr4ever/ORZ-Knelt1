@@ -48,6 +48,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;

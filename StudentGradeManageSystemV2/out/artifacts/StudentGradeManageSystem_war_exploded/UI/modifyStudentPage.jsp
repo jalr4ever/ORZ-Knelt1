@@ -11,9 +11,9 @@
 <head>
     <title>修改学生信息</title>
     <%--引入必要样式与js--%>
-    <link rel="stylesheet" type="text/css" href="UI/css/bootstrap.min.css">
-    <script src="UI/js/jquery.min.js"></script>
-    <script src="UI/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <style>
         <%--基本样式--%>
         body{
@@ -24,6 +24,10 @@
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+        }
+        body input{
+            color:GrayText;
+            background-size: 100% 100%;
         }
     </style>
 
@@ -37,18 +41,57 @@
     %>
     <!--修改学生信息-->
     <form action="/ModifyStudentServlet" method="post">
-            照片<img src="../${student.imagePath}" alt="该学生没有上传照片">
-            学号<input type="text" name="id" value="${student.id}">
-            密码<input type="text" name="password" value="${student.password}">
-            班级<input type="text" name="class" value="${student.clazz}">
-            姓名<input type="text" name="name" value="${student.name}">
-            性别<input type="text" name="sex" value="${student.sex}">
-            年龄<input type="text" name="age" value="${student.age}">
-            手机号<input type="text" name="phoneNum" value="${student.phoneNum}">
-            班主任<input type="text" name="chargeTeacher" value="${student.chargeTeacher}">
-            家庭住址<input type="text" name="address" value="${student.address}">
-            <input type="submit" name="submit" value="确认修改">
-
+        <div class="container">
+            <div  align="center" class="">
+                <h2>修改学生 ${student.id} 的信息</h2>
+            </div>
+            <table class="table table-bordered">
+                <tr>
+                    <td>照片</td>
+                    <td><img src="../${student.imagePath}" alt="该学生没有上传照片"></td>
+                </tr>
+                <tr>
+                    <td>学号</td>
+                    <td> <input type="text" name="id" value="${student.id}"></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td> <input type="text" name="password" value="${student.password}"></td>
+                </tr>
+                <tr>
+                    <td>班级</td>
+                    <td><input type="text" name="class" value="${student.clazz}"></td>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td><input type="text" name="name" value="${student.name}"></td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td><input type="text" name="sex" value="${student.sex}"></td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td><input type="text" name="age" value="${student.age}"></td>
+                </tr>
+                <tr>
+                    <td> 手机号</td>
+                    <td>  <input type="text" name="phoneNum" value="${student.phoneNum}"></td>
+                </tr>
+                <tr>
+                    <td>班主任</td>
+                    <td><input type="text" name="chargeTeacher" value="${student.chargeTeacher}"></td>
+                </tr>
+                <tr>
+                    <td>家庭住址</td>
+                    <td> <input type="text" name="address" value="${student.address}"></td>
+                </tr>
+                <tr>
+                    <td>修改选项</td>
+                    <td> <input type="submit" class="btn btn-danger btn-md" name="submit" value="确认修改"></td>
+                </tr>
+            </table>
+        </div>
         <input type="hidden" name="oldId" value="${student.id}">
         <input type="hidden" name="imagePath" value="${student.imagePath}">
     </form>

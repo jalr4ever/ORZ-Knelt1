@@ -61,6 +61,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;
@@ -73,9 +74,9 @@
 <body>
 
     <!--管理学生个人信息-->
-    <div class="container center-vertical" align="center">
+    <div class="container " align="center">
     <c:if test="${studentList!=null}">
-        <div  align="center" class="center-vertical">
+        <div  align="center" class="">
             <h2>学生个人信息</h2>
         </div>
         <table id="stuInfoPanel" class="table table-info  table-bordered">
@@ -140,9 +141,9 @@
 
 
     <!--管理教师个人信息-->
-    <div calss="container center-vertical" align="center" style="width:auto;height:auto">
+    <div calss="container" align="center" style="width:auto;height:auto">
         <c:if test="${teacherList!=null}">
-            <div  align="center" class="center-vertical">
+            <div  align="center" class="">
                 <h2>教师个人信息</h2>
             </div>
             <table id="teaInfoPanel" class="table table-info table-bordered">
@@ -209,7 +210,7 @@
 
 
     <!--管理学生成绩-->
-    <div class="container center-vertical" align="center" style="width:auto;height:auto">
+    <div class="container " align="center" style="width:auto;height:auto">
         <c:if test="${studentGradeList!=null}">
         <table id="manageStuPanel" class="table table-info table-bordered">
             <div  align="center">
@@ -303,10 +304,10 @@
 
 
     <!--管理教师管理信息-->
-    <div class="container center-vertical" align="center">
+    <div class="container" align="center">
         <c:if test="${teacherManageList!=null}">
             <div  align="center">
-                <h2>教室信息管理</h2>
+                <h2>教师信息管理</h2>
             </div>
             <table id="manageTeaPanel" class="table table-info table-bordered">
                 <tr>

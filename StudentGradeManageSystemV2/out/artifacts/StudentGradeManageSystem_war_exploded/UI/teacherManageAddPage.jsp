@@ -19,6 +19,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;
@@ -33,6 +34,9 @@
 <form action="/TeacherManageAddServlet" method="post">
     <div class="container" align="center" style="margin-top: 10%">
     <table class="table table-info table-bordered">
+        <div  align="center" class="">
+            <h2>添加新的教师管理班级信息</h2>
+        </div>
         <tbody>
         <tr>
             <td>工号</td>

@@ -19,6 +19,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         .center-vertical{
             position: relative;
@@ -32,6 +33,9 @@
 <!--添加学生信息-->
 <form action="/StudentInfoAddServlet" method="post">
     <div class="container" align="center" style="margin-top: 5%">
+        <div  align="center" class="">
+            <h2>添加新的学生成员</h2>
+        </div>
         <table class="table table-info table-bordered">
             <tbody>
             <tr>

@@ -19,6 +19,7 @@
         body{
             background-image: url("/UI/images/demo-1-bg.jpg");
             color: white;
+            background-size: 100% 100%;
         }
         body input{
             color: GrayText;
@@ -41,8 +42,8 @@
 <!--修改学生信息-->
 <form action="/ModifyStudentGradeServlet" method="post">
     <div class="container">
-        <div  align="center" class="center-vertical">
-            <h2>修改学生个人信息</h2>
+        <div  align="center" class="">
+            <h2>修改学生 ${studentGrade.id} 的分数</h2>
         </div>
         <table class="table table-info table-bordered">
             <tbody>
